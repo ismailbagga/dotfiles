@@ -1,20 +1,54 @@
 {
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
   "editor.fontWeight": "400",
+  // "editor.fontWeight": "360",
   "workbench.editor.untitled.hint": "hidden",
   "explorer.confirmDelete": false,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontWeightBold": "100",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeightBold": "500",
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  // "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 80,
+  "editor.fontSize": 13,
+  // "workbench.editor.enablePreview": false
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  "html.format.wrapAttributes": "force-aligned",
+  "bracketSameLine": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editorAssociations": {
+    "*.class": "default"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "window.zoomLevel": -1
 }
+
