@@ -1,8 +1,10 @@
 {
+  "code-runner.runInTerminal": true,
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "'Fira Code'",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "400",
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "330",
   // "editor.fontWeight": "360",
   "workbench.editor.untitled.hint": "hidden",
   "explorer.confirmDelete": false,
@@ -11,8 +13,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.fontSize": 22,
+  "terminal.integrated.fontWeightBold": "400",
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -27,7 +29,6 @@
   ],
   "editor.formatOnSave": true,
   "prettier.printWidth": 80,
-  "editor.fontSize": 13,
   // "workbench.editor.enablePreview": false
   "editor.suggest.snippetsPreventQuickSuggestions": false,
 
@@ -49,6 +50,12 @@
     "editor.defaultFormatter": "Dart-Code.dart-code"
   },
   "dart.showInspectorNotificationsForWidgetErrors": false,
-  "window.zoomLevel": -1
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Community Material Theme High Contrast",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "files.autoSave": "afterDelay",
+  "python.linting.pylintArgs": ["--disable=C0111"]
 }
 
