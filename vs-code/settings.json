@@ -1,0 +1,239 @@
+{
+  // Font 1
+  // "editor.fontFamily": "'Fira Code'",
+  // "editor.fontWeight": "350",
+  // "editor.fontSize": 15,
+  // Font 2
+  "editor.fontFamily": "'Cascadia Code'",
+  // "editor.fontFamily": "'DroidSansM Nerd Font Mono'",
+  "editor.fontWeight": "330",
+  "editor.fontSize": 15,
+  // Font 3
+  // "editor.fontFamily": "'Source Code Pro'",
+  // "editor.fontWeight": "400",
+  // "editor.fontSize": 16,
+  "editor.mouseWheelZoom": true,
+  "editor.cursorWidth": 3,
+  "editor.formatOnPaste": true,
+  "window.titleSeparator": " - ",
+  "explorer.confirmDelete": false,
+  "emmet.includeLanguages": {
+    // "ejs": "html",
+    // "django-html": "html",
+    "javascript": "javascriptreact",
+    "postcss": "css"
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ffffff20"
+  },
+
+  // ---------------------Error Lens ---------------------------------
+  "errorLens.enabled": true,
+  "errorLens.fontSize": "14px",
+  "errorLens.fontWeight": "normal",
+  "errorLens.messageBackgroundMode": "none",
+  //-------------------------------------------------------------------
+  // "terminal.integrated.fontWeightBold": "800",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // -------------------------- Prettier ----------------------------------
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[django-html]": {
+    // "editor.defaultFormatter": "HookyQR.beautify",
+  },
+
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "html.format.wrapAttributes": "force-aligned",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editorAssociations": {
+    "*.class": "default"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnType": true
+  },
+  "redhat.telemetry.enabled": true,
+  "workbench.startupEditor": "none",
+  "files.autoSaveDelay": 200,
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "git.autofetch": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "errorLens.excludeBySource": ["ts(2322)"],
+  "editor.minimap.enabled": false,
+  "vim.leader": "<Space>",
+  // Django
+  // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  // "python.analysis.indexing": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // navigation
+    // switch b/w buffers (tabs over open files ) 'S = Shift' ,
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    // Split Tabs
+    // Open Current Tab on Vertical Pane
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    // Open Current Tab on Horizantal Pane
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    // Panes
+    // Jump Over The Open Panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // FILE  TREE
+    // OPEN & Focus ON File View
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    {
+      "before": ["<C-t>"],
+      "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      "before": ["<S-t>"],
+      "commands": ["workbench.action.togglePanel"]
+    },
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    // CTRL + P
+    {
+      "before": ["leader", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "o"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["leader", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    }
+    // Fixing The Clipboard Past & Copy
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual Mode while indenting
+    // Move Selected Lins in Visual Model
+    {
+      "before": [">"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["a"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["leader", "o"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.moveSelectionToPreviousFindMatch"]
+    },
+    {
+      "before": ["x"],
+      "commands": ["deleteRight"],
+      "when": "textInputFocus"
+    },
+    // toggle comment selected
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true,
+  "editor.renderWhitespace": "none",
+  "editor.stickyScroll.enabled": true,
+  "vim.camelCaseMotion.enable": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.empty.hint": "hidden",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "workbench.colorTheme": "Tokyo Night",
+  "prettier.printWidth": 120,
+  "files.autoSave": "afterDelay"
+}
